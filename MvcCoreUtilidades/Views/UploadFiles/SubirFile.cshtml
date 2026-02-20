@@ -9,7 +9,10 @@
         Subir fichero
     </button>
 </form>
-<img src='~/uploads/@ViewData["FILENAME"]' style="width: 200px; height: 200px"/>
+<img src='@ViewData["PATH"]' style="width: 200px; height: 200px"/>
+<h2 class="text-primary">
+    @ViewData["PATH"]
+</h2>
 <h2 class="text-primary">
     @ViewData["MENSAJE"]
 </h2>
