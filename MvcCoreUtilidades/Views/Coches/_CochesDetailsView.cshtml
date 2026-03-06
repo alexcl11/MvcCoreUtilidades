@@ -1,0 +1,21 @@
+﻿@model Coche
+
+<h1>Detalles Coche AJAX</h1>
+<br />
+<hr />
+<br />
+@if (Model == null)
+{
+    <h2 style="color: red">No existe el coche</h2>
+}
+else
+{    
+    <ul class="list-group">
+        <li class="list-group-item">ID: @Model.IdCoche</li>
+        <li class="list-group-item">Marca: @Model.Marca</li>
+        <li class="list-group-item">Modelo: @Model.Modelo</li>
+        <div>
+            <img src="@Model.Imagen" style="width: 100px; height: auto"/>
+        </div>
+    </ul>
+}

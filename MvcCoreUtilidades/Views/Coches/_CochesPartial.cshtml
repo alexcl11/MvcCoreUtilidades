@@ -1,0 +1,29 @@
+﻿@model List<Coche>
+
+<h1>Coches Ajax Partial</h1>
+<br />
+<hr />
+<br />
+
+<table class="table table-bordered">
+    <thead>
+        <th>Id Coche</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Imagen</th>
+        <th></th>
+    </thead>
+    <tbody>
+        @foreach (Coche coche in Model)
+        {
+            <tr>
+                <td>@coche.IdCoche</td>
+                <td>@coche.Marca</td>
+                <td>@coche.Modelo</td>
+                <td>
+                    <img src="@coche.Imagen" style="width: 50px; height:auto"/>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
